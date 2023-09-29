@@ -14,13 +14,20 @@ white = (255,255,255)
 i = 0
 j = 0
 
-while( i < rows ):
+height, width = img.shape[:2]
+
+while(i < rows):
+    j = 0
     while(j < columns):
        
         img[i , j] = green
-        i = i + 1
-    j = j + 1
-            
+        try:
+            img[i+1,j+1] = white
+        except: 
+            pass
+        j = j + 1
+        
+    i = i + 3
 
             
         
