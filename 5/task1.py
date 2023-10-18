@@ -29,7 +29,7 @@ while( i < epochs):
     
     # calculating distance between the all the data points and all the centroids
     for i in parsed_data:
-        smallest_coordinate = 0
+        smallest_coordinate = np.("inf")
         for j in coordinates_of_centroid:
             
             old_distance = 
